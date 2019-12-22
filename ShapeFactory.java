@@ -20,6 +20,12 @@ public class ShapeFactory
     public Paint paint;
     public int width;
     public int height;
+	
+	/** 
+     * @param shape_type
+     * @return 
+     * малювання об'єктів та свойств у відповідності  з різними кейсами
+     */
     
     public ShapeFactory(final int shape_type) {
         this.width = 25;
@@ -82,6 +88,15 @@ public class ShapeFactory
         }
     }
     
+	    /** 
+     * @param arms
+     * @param center
+     * @param rOuter
+     * @param rInner
+     * @return Shape
+     * малювання зірки
+     */
+	
     private static Shape createStar(final int arms, final Point center, final double rOuter, final double rInner) {
         final double angle = 3.141592653589793 / arms;
         final GeneralPath path = new GeneralPath();

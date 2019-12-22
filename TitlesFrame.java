@@ -8,6 +8,10 @@ import javax.swing.JFrame;
 
 public class TitlesFrame extends JFrame
 {
+	/** 
+     * @return 
+     * дозвіл консольного вікна, виклик TitlesPanel з передачею на неї значень
+     */
     public TitlesFrame() {
         this.initUI();
     }
@@ -19,7 +23,10 @@ public class TitlesFrame extends JFrame
         this.setSize(350, 350);
         this.setLocationRelativeTo(null);
     }
-    
+       /** 
+     * @param Runnable(
+     * main
+     */
     public static void main(final String[] args) {
         SwingUtilities.invokeLater(new Runnable() {
             @Override
