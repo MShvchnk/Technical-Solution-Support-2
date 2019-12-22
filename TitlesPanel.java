@@ -21,6 +21,11 @@ public class TitlesPanel extends JPanel implements ActionListener
     private boolean is_done;
     private int start_angle;
     private int shape;
+   /** 
+     * @param _shape
+     * @return 
+     * анимация
+     */
     
     public TitlesPanel(final int _shape) {
         this.start_angle = 0;
@@ -30,6 +35,9 @@ public class TitlesPanel extends JPanel implements ActionListener
         this.animation.start();
     }
     
+	 /** 
+     * @param arg0
+     */
     @Override
     public void actionPerformed(final ActionEvent arg0) {
         if (this.is_done) {
